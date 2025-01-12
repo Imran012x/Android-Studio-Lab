@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#CCCCCC">
+
+    <!-- ImageView at the top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="269dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/hungry" />
+
+    <!-- LinearLayout for text and button at the bottom -->
+    <LinearLayout
+        android:id="@+id/textGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- TextView for the message -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am so Hungry"
+            android:textColor="#33B5E5"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <!-- Button to go to the next activity -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am so Hungry"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:padding="16dp" />
+    </LinearLayout>
+</RelativeLayout>

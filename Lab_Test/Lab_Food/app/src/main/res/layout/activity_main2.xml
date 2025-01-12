@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC">
+
+    <!-- ImageView positioned at the top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/full"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <!-- Text and Button group at the bottom -->
+    <LinearLayout
+        android:id="@+id/textGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- TextView for message -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am so Full"
+            android:textColor="#33B5E5"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <!-- Button for Done action -->
+        <Button
+            android:id="@+id/buttondone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:padding="16dp" />
+    </LinearLayout>
+</RelativeLayout>
